@@ -12,6 +12,7 @@ apt-get clean && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
 ADD package.json /
 
 RUN npm config set registry https://registry.npm.taobao.org
+
 RUN npm install
 
 # Set language to UTF8
