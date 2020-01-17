@@ -10,6 +10,8 @@ ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils 
 apt-get clean && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
 
 ADD package.json /
+ADD case/ /
+ADD src/ /
 
 RUN npm config set registry https://registry.npm.taobao.org
 
