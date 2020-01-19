@@ -17,6 +17,6 @@ RUN npm config set registry https://registry.npm.taobao.org
 
 RUN npm install
 
-# Set language to UTF8.
+# Set language to UTF8
 ENV LANG="C.UTF-8"
 
