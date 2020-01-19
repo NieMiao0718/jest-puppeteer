@@ -15,6 +15,7 @@ ADD src/ /jest-puppeteer/src/
 
 RUN npm config set registry https://registry.npm.taobao.org
 
+RUN cd /jest-puppeteer
 RUN npm install
 
 # Set language to UTF8
