@@ -15,7 +15,7 @@ ADD src/ ./src/
 
 RUN npm config set registry https://registry.npm.taobao.org
 
-RUN npm install
+RUN npm install -g jest@25.1.0 puppeteer@2.0.0
 
 # Set language to UTF8.
 ENV LANG="C.UTF-8"
