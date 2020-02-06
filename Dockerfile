@@ -9,9 +9,9 @@ fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst ttf-freefont \
 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget && \
 apt-get clean && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
 
-ADD package.json /
-ADD case/ /case/
-ADD src/ /src/
+ADD package.json ./
+ADD case/ ./case/
+ADD src/ ./src/
 
 RUN npm config set registry https://registry.npm.taobao.org
 
